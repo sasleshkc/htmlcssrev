@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolving dragon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            background-image: linear-gradient(to right, black, purple);
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .outerbody {
+            width: 30vw;
+            height: 30vh;
+            background-image: radial-gradient(purple, black, green);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            position: relative;
+        }
+        #dragon {
+            height: 5rem;
+            width: 5rem;
+            border-radius: 100px;
+            position: absolute;
+            animation: rotator 3s linear infinite; /* Smooth, continuous rotation */
+        }
+        @keyframes rotator {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outerbody">
+        <img src="revolvingdragon.jpg" alt="dragon" id="dragon">
+    </div>
+</body>
+</html>
