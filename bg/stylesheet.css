@@ -1,0 +1,48 @@
+/* stylesheet.css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: radial-gradient(circle, red, blue);
+    margin-top: 1rem;
+    margin-left: 5vw;
+    border-radius: 100px;
+    width: 90vw;
+    height: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.progresscontainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#bar {
+    height: 100%;
+    width: 0;
+    background: #4caf50;
+    transition: width 3s ease-in;
+}
